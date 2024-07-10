@@ -1,1 +1,1 @@
-Here I present my very own creations while following along the #100DaysofCode challenge in python.
+Here I present all my projects while following along the #100DaysofCode challenge in python.
