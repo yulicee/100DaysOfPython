@@ -7,7 +7,6 @@ class Ball(Turtle):
         self.color("white")
         self.shape("circle")
         self.penup()
-        # Further reduced initial speed
         self.x_move = random.choice([0.2, -0.2])  
         self.y_move = random.choice([0.2, -0.2])  
         self.move_speed = 0.2  
