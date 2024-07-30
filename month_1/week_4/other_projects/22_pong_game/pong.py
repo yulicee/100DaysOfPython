@@ -4,7 +4,7 @@ from ball import Ball
 from paddle import Paddle
 from scoreboard import Scoreboard
 from countdown import Countdown
-from timer import Timer  # Import the Timer class
+from timer import Timer  
 
 # Setup screen
 screen = Screen()
@@ -19,12 +19,12 @@ right_paddle = Paddle((350, 0))
 ball = Ball()
 scoreboard = Scoreboard()
 countdown = Countdown()
-timer = Timer()  # Create a Timer instance
+timer = Timer()  
 
 # Game state
 is_paused = False
 game_started = False
-start_time = time.time()  # Record the start time
+start_time = time.time()  
 
 def toggle_pause():
     global is_paused
@@ -114,12 +114,12 @@ screen.onkeypress(toggle_pause, "space")
 screen.onkeypress(quit_game, "q")
 
 # Main game loop
-last_update_time = time.time()  # Track time of last update
+last_update_time = time.time()  
 while True:
     screen.update()  
 
     current_time = time.time()
-    delta_time = current_time - last_update_time  # Time since last update
+    delta_time = current_time - last_update_time  
     last_update_time = current_time
 
     if game_started and not is_paused:
@@ -142,4 +142,4 @@ while True:
             ball.reset_position()
             scoreboard.r_point()  
 
-        timer.update_time(delta_time)  # Update the timer display
+        timer.update_time(delta_time)  
