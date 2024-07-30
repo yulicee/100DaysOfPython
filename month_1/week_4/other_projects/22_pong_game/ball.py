@@ -7,10 +7,9 @@ class Ball(Turtle):
         self.color("white")
         self.shape("circle")
         self.penup()
-        # Further reduced initial speed
         self.x_move = random.choice([0.2, -0.2])  
         self.y_move = random.choice([0.2, -0.2])  
-        self.move_speed = 0.2  # Adjusted for slow initial move speed
+        self.move_speed = 0.2  
         self.speed("fastest")
 
     def move(self):
@@ -27,6 +26,6 @@ class Ball(Turtle):
 
     def reset_position(self):
         self.goto(0, 0)
-        self.move_speed = 0.2  # Reset to slower initial move speed
-        self.x_move = random.choice([0.2, -0.2])  # Reset to very slow initial speed on x-axis
-        self.y_move = random.choice([0.2, -0.2])  # Reset to very slow initial speed on y-axis
+        self.move_speed = 0.2 
+        self.x_move = random.choice([0.2, -0.2])  
+        self.y_move = random.choice([0.2, -0.2])  
