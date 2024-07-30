@@ -6,8 +6,7 @@ class Timer(Turtle):
         self.hideturtle()
         self.penup()
         self.color("white")
-        self.goto(0, 240)  # Adjusted position to fit between scores
-        self.elapsed_time = 0
+        self.goto(0, 240)  
         self.update_time_display()
 
     def update_time(self, delta_time):
@@ -20,4 +19,4 @@ class Timer(Turtle):
         minutes = int(self.elapsed_time // 60)
         seconds = int(self.elapsed_time % 60)
         self.clear()
-        self.write(f"Time: {minutes:02}:{seconds:02}", align="center", font=("Courier", 18, "normal"))  # Smaller font size
+        self.write(f"Time: {minutes:02}:{seconds:02}", align="center", font=("Courier", 18, "normal"))  
