@@ -1,11 +1,9 @@
 from tkinter import *
 import math
-import pygame  # Import pygame for sound
+import pygame 
 
-# Initialize pygame mixer
 pygame.mixer.init()
 
-# Load the sound (use raw string for the path or double backslashes)
 sound_file_path = r"C:\Users\julie\Desktop\python_summer_course\Other\month_2\week_1\28_pomodoro\mixkit-achievement-bell-600.wav"
 break_sound = pygame.mixer.Sound(sound_file_path)
 
