@@ -4,7 +4,7 @@ import pygame
 
 pygame.mixer.init()
 
-sound_file_path = r"C:\Users\julie\Desktop\python_summer_course\Other\month_2\week_1\28_pomodoro\mixkit-achievement-bell-600.wav"
+sound_file_path = "mixkit-achievement-bell-600.wav"
 break_sound = pygame.mixer.Sound(sound_file_path)
 
 # ---------------------------- CONSTANTS ------------------------------- #
