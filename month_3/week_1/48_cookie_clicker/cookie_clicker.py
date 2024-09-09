@@ -53,13 +53,13 @@ driver.get("https://orteil.dashnet.org/cookieclicker/")
 # Wait for the game to load
 time.sleep(5)
 
-# Select English (change if needed)
+# Select English
 driver.find_element(By.ID, "langSelect-EN").click()
 
 # Wait for the game interface to fully load
 time.sleep(10)
 
-# IDs for buildings (these can vary depending on game progression)
+# IDs for buildings
 building_ids = [
     "product0",  # Cursor
     "product1",  # Grandma
@@ -79,8 +79,6 @@ building_ids = [
     "product15", # Fractal Engine
     "product16", # Javascript Console
     "product17", # Idleverse
-    "product18",
-    # Add more buildings as needed
 ]
 
 # Main game loop
